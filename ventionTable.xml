@@ -8,10 +8,10 @@
 ====================================================== -©vk©-->
 
     <compiler angle="radian" meshdir="" texturedir=""/>
-    <include file="../furniture_sim/ventionTable/ventionTable_asset.xml"/>
+    <include file="ventionTable/ventionTable_asset.xml"/>
 
     <worldbody>
-        <include file="../furniture_sim/ventionTable/ventionTable_body.xml"/>
+        <include file="ventionTable/ventionTable_body.xml"/>
     </worldbody>
 
 </mujoco>

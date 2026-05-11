@@ -8,10 +8,10 @@
 ====================================================== -©vk©-->
 
     <compiler angle="radian" meshdir="" texturedir=""/>
-    <include file="../furniture_sim/studyTable/studyTable_asset.xml"/>
+    <include file="studyTable/studyTable_asset.xml"/>
 
     <worldbody>
-        <include file="../furniture_sim/studyTable/studyTable_body.xml" />
+        <include file="studyTable/studyTable_body.xml" />
     </worldbody>
 
 </mujoco>
