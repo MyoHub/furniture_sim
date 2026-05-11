@@ -14,13 +14,13 @@
 <mujoco model="lightButtons">
     <compiler angle="radian" meshdir="" texturedir=""/>
 
-    <include file="../furniture_sim/lightButtons/lightButtons_assets.xml"/>
+    <include file="lightButtons/lightButtons_assets.xml"/>
 
     <worldbody>
 
         <body>
-            <include file="../furniture_sim/lightButtons/lights_body.xml" />
-		    <include file="../furniture_sim/lightButtons/buttons_body.xml" />
+            <include file="lightButtons/lights_body.xml" />
+		    <include file="lightButtons/buttons_body.xml" />
         </body>
 
     </worldbody>

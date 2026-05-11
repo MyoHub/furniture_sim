@@ -9,8 +9,8 @@
     <compiler inertiafromgeom="auto" inertiagrouprange="4 4" angle="radian"/>
 
     <asset>
-        <texture name="T_slide_metal" type="cube" height="1" width="1" file="../furniture_sim/common/textures/metal0.png"/>
-        <texture name="T_slide_wood" type="cube" height="1" width="1" file="../furniture_sim/common/textures/wood1.png"/>
+        <texture name="T_slide_metal" type="cube" height="1" width="1" file="../common/textures/metal0.png"/>
+        <texture name="T_slide_wood" type="cube" height="1" width="1" file="../common/textures/wood1.png"/>
 
         <material name="M_slide_metal" texture="T_slide_metal" texrepeat="3 3" reflectance="0.7" shininess=".4" texuniform="false"/>
         <material name="M_slide_blue" texture="T_slide_wood" rgba="1 1 1 1" reflectance="0.7" shininess=".4" texuniform="false"/>

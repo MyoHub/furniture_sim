@@ -9,13 +9,13 @@
 
     <asset>
 
-        <mesh name="studyTable_Main" file="../furniture_sim/studyTable/meshes/studyTable_Main.stl" scale="0.01 0.01 0.01" />
-        <mesh name="studyTable_Slide_Wood" file="../furniture_sim/studyTable/meshes/studyTable_Slide_Wood.stl" scale="0.01 0.01 0.01" />
-        <mesh name="studyTable_Slide_Handle" file="../furniture_sim/studyTable/meshes/studyTable_Slide_Handle.stl" scale="0.01 0.01 0.01" />
-        <mesh name="studyTable_Drawer_Wood" file="../furniture_sim/studyTable/meshes/studyTable_Drawer_Wood.stl" scale="0.01 0.01 0.01" />
-        <mesh name="studyTable_Drawer_Handle" file="../furniture_sim/studyTable/meshes/studyTable_Drawer_Handle.stl" scale="0.01 0.01 0.01" />
-        <texture name="T_Wood_studyTable" type="cube" height="1" width="1" file="../furniture_sim/common/textures/wood0.png" />
-        <texture name="T_Metal_studyTable" type="cube" height="1" width="1" file="../furniture_sim/common/textures/metal0.png" />
+        <mesh name="studyTable_Main" file="../studyTable/meshes/studyTable_Main.stl" scale="0.01 0.01 0.01" />
+        <mesh name="studyTable_Slide_Wood" file="../studyTable/meshes/studyTable_Slide_Wood.stl" scale="0.01 0.01 0.01" />
+        <mesh name="studyTable_Slide_Handle" file="../studyTable/meshes/studyTable_Slide_Handle.stl" scale="0.01 0.01 0.01" />
+        <mesh name="studyTable_Drawer_Wood" file="../studyTable/meshes/studyTable_Drawer_Wood.stl" scale="0.01 0.01 0.01" />
+        <mesh name="studyTable_Drawer_Handle" file="../studyTable/meshes/studyTable_Drawer_Handle.stl" scale="0.01 0.01 0.01" />
+        <texture name="T_Wood_studyTable" type="cube" height="1" width="1" file="../common/textures/wood0.png" />
+        <texture name="T_Metal_studyTable" type="cube" height="1" width="1" file="../common/textures/metal0.png" />
 
         <material name="M_Wood_studyTable" texture="T_Wood_studyTable" rgba="0.8 0.8 0.8 1" shininess="0.2" reflectance="0.3" texuniform="false" />
         <material name="M_Metal_studyTable" texture="T_Metal_studyTable" texrepeat="3 3" reflectance="0.7" texuniform="false" />

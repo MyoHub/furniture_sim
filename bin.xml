@@ -8,17 +8,17 @@
 ====================================================== -©vk©-->
 
     <compiler angle="radian" meshdir="" texturedir=""/>
-    <include file="../furniture_sim/bin/bin_asset.xml"/>
+    <include file="bin/bin_asset.xml"/>
 
     <worldbody>
         <body>
-            <include file="../furniture_sim/bin/bin_body.xml" />
+            <include file="bin/bin_body.xml" />
         </body>
         <body pos=".5 0 0">
-            <include file="../furniture_sim/bin/busbin1_body.xml" />
+            <include file="bin/busbin1_body.xml" />
         </body>
         <body pos="-.5 0 0">
-            <include file="../furniture_sim/bin/busbin2_body.xml" />
+            <include file="bin/busbin2_body.xml" />
         </body>
     </worldbody>
 
