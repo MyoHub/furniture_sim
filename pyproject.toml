@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=69", "wheel"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,25 +8,69 @@ version = "0.2.0"
 description = "Furniture simulation XML assets for MyoSuite."
 readme = "README.md"
 requires-python = ">=3.9"
-license = { text = "Apache-2.0" }
-authors = [{ name = "myolab" }]
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "MyoHub" }]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "mujoco>=3.0",
+    "numpy",
+    "pytest>=7.0",
+]
+
 [project.urls]
-Homepage = "https://github.com/myolab/furniture_sim"
-Repository = "https://github.com/myolab/furniture_sim"
+Homepage = "https://github.com/MyoHub/furniture_sim"
+Repository = "https://github.com/MyoHub/furniture_sim"
 
 [tool.setuptools]
 packages = ["furniture_sim"]
-include-package-data = true
+include-package-data = false
 
 [tool.setuptools.package-dir]
 furniture_sim = "."
 
 [tool.setuptools.package-data]
-furniture_sim = ["**/*"]
+furniture_sim = [
+    "README.md",
+    "*.xml",
+    "backwall/*",
+    "bin/*",
+    "bin/meshes/*.stl",
+    "boxcabinet/*",
+    "common/textures/*.png",
+    "counters/*",
+    "counters/meshes/*.stl",
+    "dishwasher/*",
+    "dishwasher/meshes/*.stl",
+    "hingecabinet/*",
+    "kettle/*",
+    "kettle/meshes/*.stl",
+    "kitchen/*.xml",
+    "kitchen/*.py",
+    "lightButtons/*",
+    "lightButtons/meshes/*.stl",
+    "microwave/*",
+    "microwave/meshes/*.stl",
+    "misc/*.stl",
+    "oven/*",
+    "oven/meshes/*.stl",
+    "simpleTable/*",
+    "slidecabinet/*",
+    "studyTable/*",
+    "studyTable/meshes/*.stl",
+    "ventionTable/*",
+]
+
+[tool.setuptools.exclude-package-data]
+furniture_sim = [
+    "**/__pycache__/*",
+    "**/*.pyc",
+    "*_random*.xml",
+    "*/*_random*.xml",
+]
