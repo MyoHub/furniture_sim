@@ -8,10 +8,10 @@
 ====================================================== -©vk©-->
 
     <geom class="viz_stl_Metal_bin" type="mesh" mesh="bin" euler="-1.57 0 3.14" group="1" contype="0" conaffinity="0" />
-    <geom type='box' pos='-.12 0 .2' size='.01 .147 .2' euler='0 -0.0872665 0' group="3" />
-    <geom type='box' pos='.12 0 .2' size='.01 .147 .2' euler='0 0.0872665 0' group="3" />
-    <geom type='box' pos='0 -.12 .2' size='.01 .147 .2' euler='0.0872665 0 1.57' group="3" />
-    <geom type='box' pos='0 .12 .2' size='.01 .147 .2' euler='-0.0872665 0 1.57' group="3"/>
-    <geom type='box' pos='0 0 .05' size='.1 .1 .005' group="3" />
+    <geom type='box' pos='-.12 0 .2' size='.01 .147 .2' euler='0 -0.0872665 0' group="4" />
+    <geom type='box' pos='.12 0 .2' size='.01 .147 .2' euler='0 0.0872665 0' group="4" />
+    <geom type='box' pos='0 -.12 .2' size='.01 .147 .2' euler='0.0872665 0 1.57' group="4" />
+    <geom type='box' pos='0 .12 .2' size='.01 .147 .2' euler='-0.0872665 0 1.57' group="4"/>
+    <geom type='box' pos='0 0 .05' size='.1 .1 .005' group="4" />
 
 </mujocoinclude>

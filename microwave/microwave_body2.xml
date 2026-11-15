@@ -13,16 +13,16 @@
         <geom type="box" size=".05 .2 .159" pos="0.25 0 .16" material="micro_metal" rgba="1 0 0 1"/>  <!--right-->
         <geom type="box" size=".02 .2 .159" pos="-.28 0 .16" material="micro_metal" rgba="1 0 0 1"/> <!--left -->
 
-        <geom class="micro_collision" type="box" size=".3 .02 .16" pos="0 .22 .16"/> <!--back -->
-        <geom class="micro_collision" type="box" size=".3 .2 .02" pos="0 0 .02"/> <!--bottom -->
-        <geom class="micro_collision" type="box" size=".3 .2 .02" pos="0 0 .30"/> <!--top -->
-        <geom class="micro_collision" type="box" size=".05 .2 .159" pos="0.25 0 .16"/>  <!--right-->
-        <geom class="micro_collision" type="box" size=".02 .2 .159" pos="-.28 0 .16"/> <!--left -->
+        <geom class="micro_collision" type="box" size=".3 .02 .16" pos="0 .22 .16" mass=".5"/> <!--back -->
+        <geom class="micro_collision" type="box" size=".3 .2 .02" pos="0 0 .02" mass=".5"/> <!--bottom -->
+        <geom class="micro_collision" type="box" size=".3 .2 .02" pos="0 0 .30" mass=".5"/> <!--top -->
+        <geom class="micro_collision" type="box" size=".05 .2 .159" pos="0.25 0 .16" mass=".5"/>  <!--right-->
+        <geom class="micro_collision" type="box" size=".02 .2 .159" pos="-.28 0 .16" mass=".5"/> <!--left -->
 
         <geom type="box" size=".05 .02 .16" pos="0.25 -.225 .16" material="micro_metal" rgba=".8 0 0 1"/>
         <geom type="cylinder" size=".03 .01" pos="0.25 -.25 .08" euler="1.57 0 0" material="micro_black"/>
-        <geom class="micro_collision" type="box" size=".05 .02 .16" pos="0.25 -.225 .16"/>
-        <geom class="micro_collision" type="cylinder" size=".03 .01" pos="0.25 -.25 .08" euler="1.57 0 0"/>
+        <geom class="micro_collision" type="box" size=".05 .02 .16" pos="0.25 -.225 .16" mass=".5"/>
+        <geom class="micro_collision" type="cylinder" size=".03 .01" pos="0.25 -.25 .08" euler="1.57 0 0" mass=".02"/>
 
         <body name="microdoorroot2">
             <joint axis="0 0 1" pos="-.3 -.2 .16" limited="true" name="micro0joint" range="-2.094 0"/>

@@ -52,8 +52,8 @@
         </body>
         <body name="Burner 1" pos="0.206 -0.119 0.61">
             <inertial pos="0 0 0" mass=".01" diaginertia="0.001 0.001 0.001"/>
-            <joint name="burner1_joint" axis="0 0 -1" type="slide" limited="true" range="-.009 0"/>
-            <geom material="oven_burner" size="0.1 0.01" type="cylinder"/>
+            <joint name="burner1_joint" axis="0 0 -1" type="slide" limited="true" stiffness="1" range="-.009 0"/>
+            <geom material="oven_burner" size="0.1 0.01" type="cylinder" group="1"/>
         </body>
         <body name="knob 2" euler="1.57 0 0" pos="-0.271 0.22 1.243">
             <joint name="knob2_joint" axis="0 0 1" type="hinge" limited="true" range="-1.57 0"/>
