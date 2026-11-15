@@ -1,4 +1,9 @@
 .venv/
+build/
+dist/
 __pycache__/
+*.py[cod]
 *.egg-info/
+.pytest_cache/
 tests/__pycache__/
+kitchen/*_random*.xml
