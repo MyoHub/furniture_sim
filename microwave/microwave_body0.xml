@@ -17,6 +17,7 @@
         <geom class="micro_collision" pos="-0.08 -0.007 0.355" size="0.207 0.169 0.019" type="box" mass=".5"/>
         <geom class="micro_collision" pos="-0.08 -0.008 0.024" size="0.207 0.168 0.024" type="box" mass=".5"/>
         <geom class="micro_collision" pos="0.26 -0.197 0.187" size="0.085 0.024 0.187" type="box" mass=".5"/>
+        <site type="sphere" name="place_zone_microwave0_site" pos="-0.08 0 0.05" size="0.015" group="3" rgba="0.1 0.8 0.4 1"/>
         <body name="microdoorroot" pos="-0.345 -0.176 0.192">
             <joint axis="0 0 1" limited="true" name="micro0joint" range="-2.094 0"/>
             <geom mesh="microdoor" pos="0.345 0.176 -0.192"/>

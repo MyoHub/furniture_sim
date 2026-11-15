@@ -23,6 +23,7 @@
         <geom type="box" size=".03 .005 .03" pos="0.25 -.25 .08" material="micro_metal"/>
         <geom class="micro_collision" type="box" size=".05 .02 .20" pos="0.25 -.225 .20" mass=".5"/>
         <geom class="micro_collision" type="box" size=".03 .005 .03" pos="0.25 -.25 .08" mass=".02"/>
+        <site type="sphere" name="place_zone_microwave3_site" pos="-0.03 0 0.045" size="0.015" group="3" rgba="0.1 0.8 0.4 1"/>
 
         <body name="microdoorroot3">
             <joint axis="0 0 1" pos="-.3 -.2 .20" limited="true" name="micro0joint" range="-2.094 0"/>

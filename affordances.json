@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0",
+  "affordance_types": [
+    "grasp",
+    "open",
+    "turn",
+    "toggle",
+    "place_zone"
+  ],
+  "sites": {
+    "place_zone_bin_site": {
+      "affordance_type": "place_zone",
+      "object_category": "bin",
+      "joint_name": null
+    },
+    "boxdoor_site": {
+      "affordance_type": "open",
+      "object_category": "boxcabinet",
+      "joint_name": "boxdoorhinge"
+    },
+    "place_zone_boxcabinet_site": {
+      "affordance_type": "place_zone",
+      "object_category": "boxcabinet",
+      "joint_name": null
+    },
+    "place_zone_counter_site": {
+      "affordance_type": "place_zone",
+      "object_category": "counters",
+      "joint_name": null
+    },
+    "place_zone_sink_counter_site": {
+      "affordance_type": "place_zone",
+      "object_category": "counters",
+      "joint_name": null
+    },
+    "dishwasher_door_site": {
+      "affordance_type": "open",
+      "object_category": "dishwasher",
+      "joint_name": "door"
+    },
+    "dishwasher_rack_site": {
+      "affordance_type": "open",
+      "object_category": "dishwasher",
+      "joint_name": "top_rack"
+    },
+    "place_zone_dishwasher_rack_site": {
+      "affordance_type": "place_zone",
+      "object_category": "dishwasher",
+      "joint_name": "top_rack"
+    },
+    "leftdoor_site": {
+      "affordance_type": "open",
+      "object_category": "hingecabinet",
+      "joint_name": "leftdoorhinge"
+    },
+    "rightdoor_site": {
+      "affordance_type": "open",
+      "object_category": "hingecabinet",
+      "joint_name": "rightdoorhinge"
+    },
+    "place_zone_hingecabinet_left_site": {
+      "affordance_type": "place_zone",
+      "object_category": "hingecabinet",
+      "joint_name": null
+    },
+    "place_zone_hingecabinet_right_site": {
+      "affordance_type": "place_zone",
+      "object_category": "hingecabinet",
+      "joint_name": null
+    },
+    "kettle_site0": {
+      "affordance_type": "grasp",
+      "object_category": "kettle",
+      "joint_name": null
+    },
+    "kettle_site1": {
+      "affordance_type": "grasp",
+      "object_category": "kettle",
+      "joint_name": null
+    },
+    "kettle_site2": {
+      "affordance_type": "grasp",
+      "object_category": "kettle",
+      "joint_name": null
+    },
+    "kettle_site3": {
+      "affordance_type": "grasp",
+      "object_category": "kettle",
+      "joint_name": null
+    },
+    "kettle_site4": {
+      "affordance_type": "grasp",
+      "object_category": "kettle",
+      "joint_name": null
+    },
+    "kettle_site5": {
+      "affordance_type": "grasp",
+      "object_category": "kettle",
+      "joint_name": null
+    },
+    "kettle_site6": {
+      "affordance_type": "grasp",
+      "object_category": "kettle",
+      "joint_name": null
+    },
+    "kettle_site7": {
+      "affordance_type": "grasp",
+      "object_category": "kettle",
+      "joint_name": null
+    },
+    "red_button_site": {
+      "affordance_type": "toggle",
+      "object_category": "lightButtons",
+      "joint_name": "red button"
+    },
+    "green_button_site": {
+      "affordance_type": "toggle",
+      "object_category": "lightButtons",
+      "joint_name": "green button"
+    },
+    "blue_button_site": {
+      "affordance_type": "toggle",
+      "object_category": "lightButtons",
+      "joint_name": "blue button"
+    },
+    "microhandle_site": {
+      "affordance_type": "open",
+      "object_category": "microwave",
+      "joint_name": "micro0joint"
+    },
+    "microhandle_site1": {
+      "affordance_type": "open",
+      "object_category": "microwave",
+      "joint_name": "micro0joint"
+    },
+    "microhandle_site2": {
+      "affordance_type": "open",
+      "object_category": "microwave",
+      "joint_name": "micro0joint"
+    },
+    "microhandle_site3": {
+      "affordance_type": "open",
+      "object_category": "microwave",
+      "joint_name": "micro0joint"
+    },
+    "place_zone_microwave0_site": {
+      "affordance_type": "place_zone",
+      "object_category": "microwave",
+      "joint_name": null
+    },
+    "place_zone_microwave1_site": {
+      "affordance_type": "place_zone",
+      "object_category": "microwave",
+      "joint_name": null
+    },
+    "place_zone_microwave2_site": {
+      "affordance_type": "place_zone",
+      "object_category": "microwave",
+      "joint_name": null
+    },
+    "place_zone_microwave3_site": {
+      "affordance_type": "place_zone",
+      "object_category": "microwave",
+      "joint_name": null
+    },
+    "knob1_site": {
+      "affordance_type": "turn",
+      "object_category": "oven",
+      "joint_name": "knob1_joint"
+    },
+    "knob2_site": {
+      "affordance_type": "turn",
+      "object_category": "oven",
+      "joint_name": "knob2_joint"
+    },
+    "knob3_site": {
+      "affordance_type": "turn",
+      "object_category": "oven",
+      "joint_name": "knob3_joint"
+    },
+    "knob4_site": {
+      "affordance_type": "turn",
+      "object_category": "oven",
+      "joint_name": "knob4_joint"
+    },
+    "light_site": {
+      "affordance_type": "toggle",
+      "object_category": "oven",
+      "joint_name": "lightswitch_joint"
+    },
+    "oven_door_handle_site": {
+      "affordance_type": "grasp",
+      "object_category": "oven",
+      "joint_name": null
+    },
+    "place_zone_stove_site": {
+      "affordance_type": "place_zone",
+      "object_category": "oven",
+      "joint_name": null
+    },
+    "place_zone_wood_table_site": {
+      "affordance_type": "place_zone",
+      "object_category": "simpleTable",
+      "joint_name": null
+    },
+    "place_zone_marble_table_site": {
+      "affordance_type": "place_zone",
+      "object_category": "simpleTable",
+      "joint_name": null
+    },
+    "place_zone_granite_table_site": {
+      "affordance_type": "place_zone",
+      "object_category": "simpleTable",
+      "joint_name": null
+    },
+    "slide_site": {
+      "affordance_type": "open",
+      "object_category": "slidecabinet",
+      "joint_name": "slidedoor_joint"
+    },
+    "place_zone_slidecabinet_site": {
+      "affordance_type": "place_zone",
+      "object_category": "slidecabinet",
+      "joint_name": null
+    },
+    "study_drawer_site": {
+      "affordance_type": "open",
+      "object_category": "studyTable",
+      "joint_name": "studyTable_Drawer_Joint"
+    },
+    "slide_handle": {
+      "affordance_type": "open",
+      "object_category": "studyTable",
+      "joint_name": "studyTable_Slide_Joint"
+    },
+    "place_zone_study_table_site": {
+      "affordance_type": "place_zone",
+      "object_category": "studyTable",
+      "joint_name": null
+    },
+    "place_zone_vention_table_site": {
+      "affordance_type": "place_zone",
+      "object_category": "ventionTable",
+      "joint_name": null
+    }
+  }
+}
