@@ -1,0 +1,29 @@
+<mujocoinclude>
+<!-- =================================================
+    Model   :: cup (MuJoCo)
+    Details :: Single-handle and two-handled mug assets
+    License :: Apache-2.0
+====================================================== -->
+    <compiler inertiafromgeom="auto" inertiagrouprange="4 4" angle="radian"/>
+
+    <asset>
+        <texture name="T_cup_ceramic" type="cube" height="1" width="1" file="../common/textures/stone0.png"/>
+        <texture name="T_cup_accent" type="cube" height="1" width="1" file="../common/textures/wood1.png"/>
+
+        <material name="cup_ceramic" rgba="0.94 0.93 0.90 1" texture="T_cup_ceramic" texrepeat="2 2" reflectance="0.25" shininess="0.7" texuniform="false"/>
+        <material name="cup_handle" rgba="0.88 0.86 0.82 1" reflectance="0.2" shininess="0.6"/>
+        <material name="cup_two_handle_body" rgba="0.20 0.55 0.78 1" reflectance="0.15" shininess="0.4"/>
+        <material name="cup_two_handle_grip" rgba="0.95 0.72 0.18 1" texture="T_cup_accent" texrepeat="2 2" reflectance="0.1" shininess="0.3" texuniform="false"/>
+        <material name="cup_collision_blue" rgba="0.3 0.3 1.0 0.5" shininess="0" specular="0"/>
+    </asset>
+
+    <default>
+        <default class="cup">
+            <joint damping="0.5" frictionloss="0.1" armature="0.005" limited="true"/>
+            <geom conaffinity="0" contype="0" group="1" material="cup_ceramic" type="box"/>
+            <default class="cup_collision">
+                <geom conaffinity="1" condim="4" contype="1" friction="0.85 0.01 0.005" group="4" margin="0.001" material="cup_collision_blue" solimp="0.9 0.95 0.005" solref="0.015 1" type="box"/>
+            </default>
+        </default>
+    </default>
+</mujocoinclude>

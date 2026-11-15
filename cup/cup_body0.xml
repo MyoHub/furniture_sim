@@ -1,0 +1,43 @@
+<mujocoinclude>
+<!-- =================================================
+    Model   :: cup_body0 (Single-handle ceramic mug, 0.250 kg)
+    License :: Apache-2.0
+====================================================== -->
+    <body name="cuproot0" childclass="cup">
+        <!-- Visual base and 8-segment hollow cylindrical wall -->
+        <geom type="cylinder" pos="0 0 0.006" size="0.042 0.006"/>
+        <geom pos="0.038 0 0.056" euler="0 0 0" size="0.004 0.0162 0.044"/>
+        <geom pos="0.02687 0.02687 0.056" euler="0 0 0.785398" size="0.004 0.0162 0.044"/>
+        <geom pos="0 0.038 0.056" euler="0 0 1.570796" size="0.004 0.0162 0.044"/>
+        <geom pos="-0.02687 0.02687 0.056" euler="0 0 2.356194" size="0.004 0.0162 0.044"/>
+        <geom pos="-0.038 0 0.056" euler="0 0 3.141593" size="0.004 0.0162 0.044"/>
+        <geom pos="-0.02687 -0.02687 0.056" euler="0 0 -2.356194" size="0.004 0.0162 0.044"/>
+        <geom pos="0 -0.038 0.056" euler="0 0 -1.570796" size="0.004 0.0162 0.044"/>
+        <geom pos="0.02687 -0.02687 0.056" euler="0 0 -0.785398" size="0.004 0.0162 0.044"/>
+
+        <!-- Visual side handle loop (+X) -->
+        <geom material="cup_handle" type="capsule" pos="0.056 0 0.078" euler="0 1.570796 0" size="0.006 0.014"/>
+        <geom material="cup_handle" type="capsule" pos="0.056 0 0.028" euler="0 1.570796 0" size="0.006 0.014"/>
+        <geom material="cup_handle" type="capsule" pos="0.072 0 0.053" size="0.0065 0.025"/>
+
+        <!-- Collision geoms (total mass = 0.250 kg) -->
+        <geom class="cup_collision" type="cylinder" pos="0 0 0.006" size="0.042 0.006" mass="0.090"/>
+        <geom class="cup_collision" pos="0.038 0 0.056" euler="0 0 0" size="0.004 0.0162 0.044" mass="0.016"/>
+        <geom class="cup_collision" pos="0.02687 0.02687 0.056" euler="0 0 0.785398" size="0.004 0.0162 0.044" mass="0.016"/>
+        <geom class="cup_collision" pos="0 0.038 0.056" euler="0 0 1.570796" size="0.004 0.0162 0.044" mass="0.016"/>
+        <geom class="cup_collision" pos="-0.02687 0.02687 0.056" euler="0 0 2.356194" size="0.004 0.0162 0.044" mass="0.016"/>
+        <geom class="cup_collision" pos="-0.038 0 0.056" euler="0 0 3.141593" size="0.004 0.0162 0.044" mass="0.016"/>
+        <geom class="cup_collision" pos="-0.02687 -0.02687 0.056" euler="0 0 -2.356194" size="0.004 0.0162 0.044" mass="0.016"/>
+        <geom class="cup_collision" pos="0 -0.038 0.056" euler="0 0 -1.570796" size="0.004 0.0162 0.044" mass="0.016"/>
+        <geom class="cup_collision" pos="0.02687 -0.02687 0.056" euler="0 0 -0.785398" size="0.004 0.0162 0.044" mass="0.016"/>
+
+        <geom class="cup_collision" type="capsule" pos="0.056 0 0.078" euler="0 1.570796 0" size="0.006 0.014" mass="0.010"/>
+        <geom class="cup_collision" type="capsule" pos="0.056 0 0.028" euler="0 1.570796 0" size="0.006 0.014" mass="0.010"/>
+        <geom class="cup_collision" type="capsule" pos="0.072 0 0.053" size="0.0065 0.025" mass="0.012"/>
+
+        <!-- Reference sites -->
+        <site type="sphere" name="cup_site0" pos="0.072 0 0.053" size="0.010" group="3" rgba="1 0 0 1"/>
+        <site type="sphere" name="cup0_rim_site" pos="0 0 0.100" size="0.008" group="3" rgba="0.2 0.7 1 1"/>
+        <site type="sphere" name="cup0_bottom_site" pos="0 0 0.000" size="0.008" group="3" rgba="0.5 0.5 0.5 1"/>
+    </body>
+</mujocoinclude>

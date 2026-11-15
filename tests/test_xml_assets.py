@@ -14,6 +14,7 @@ ALL_MODELS = [
     "bin.xml",
     "boxcabinet.xml",
     "counters.xml",
+    "cup.xml",
     "dishwasher.xml",
     "hingecabinet.xml",
     "kettle.xml",
@@ -23,6 +24,7 @@ ALL_MODELS = [
     "simpleTable.xml",
     "slidecabinet.xml",
     "studyTable.xml",
+    "tableware.xml",
     "ventionTable.xml",
     "kitchen/kitchen1.xml",
     "kitchen/kitchen2.xml",
@@ -45,6 +47,11 @@ ASSET_FAMILIES = [
         "counters",
         "counters/counters_asset.xml",
         ["counters/sink_counter_body.xml", "counters/box_counter_body.xml"],
+    ),
+    (
+        "cup",
+        "cup/cup_asset.xml",
+        ["cup/cup_body0.xml", "cup/cup_body1.xml"],
     ),
     (
         "dishwasher",
@@ -78,6 +85,15 @@ ASSET_FAMILIES = [
         "studyTable",
         "studyTable/studyTable_asset.xml",
         ["studyTable/studyTable_body.xml"],
+    ),
+    (
+        "tableware",
+        "tableware/tableware_asset.xml",
+        [
+            "tableware/bowl_body.xml",
+            "tableware/plate_body.xml",
+            "tableware/spoon_body.xml",
+        ],
     ),
     (
         "ventionTable",

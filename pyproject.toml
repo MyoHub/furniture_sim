@@ -46,6 +46,7 @@ furniture_sim = [
     "common/textures/*.png",
     "counters/*",
     "counters/meshes/*.stl",
+    "cup/*",
     "dishwasher/*",
     "dishwasher/meshes/*.stl",
     "hingecabinet/*",
@@ -64,6 +65,7 @@ furniture_sim = [
     "slidecabinet/*",
     "studyTable/*",
     "studyTable/meshes/*.stl",
+    "tableware/*",
     "ventionTable/*",
 ]
 

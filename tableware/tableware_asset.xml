@@ -1,0 +1,28 @@
+<mujocoinclude>
+<!-- =================================================
+    Model   :: tableware (MuJoCo)
+    Details :: Bowl, plate, and spoon assets
+    License :: Apache-2.0
+====================================================== -->
+    <compiler inertiafromgeom="auto" inertiagrouprange="4 4" angle="radian"/>
+
+    <asset>
+        <texture name="T_tableware_ceramic" type="cube" height="1" width="1" file="../common/textures/stone1.png"/>
+        <texture name="T_tableware_metal" type="cube" height="1" width="1" file="../common/textures/metal0.png"/>
+
+        <material name="tableware_bowl" rgba="0.93 0.89 0.82 1" texture="T_tableware_ceramic" texrepeat="2 2" reflectance="0.2" shininess="0.65" texuniform="false"/>
+        <material name="tableware_plate" rgba="0.96 0.96 0.94 1" reflectance="0.3" shininess="0.8"/>
+        <material name="tableware_steel" rgba="0.88 0.90 0.92 1" texture="T_tableware_metal" texrepeat="3 3" reflectance="0.75" shininess="0.9" texuniform="false"/>
+        <material name="tableware_collision_blue" rgba="0.3 0.3 1.0 0.5" shininess="0" specular="0"/>
+    </asset>
+
+    <default>
+        <default class="tableware">
+            <joint damping="0.5" frictionloss="0.1" armature="0.005" limited="true"/>
+            <geom conaffinity="0" contype="0" group="1" material="tableware_plate" type="box"/>
+            <default class="tableware_collision">
+                <geom conaffinity="1" condim="4" contype="1" friction="0.8 0.01 0.005" group="4" margin="0.001" material="tableware_collision_blue" solimp="0.9 0.95 0.005" solref="0.015 1" type="box"/>
+            </default>
+        </default>
+    </default>
+</mujocoinclude>

@@ -1,0 +1,33 @@
+<mujocoinclude>
+<!-- =================================================
+    Model   :: bowl_body (Hollow flared ceramic bowl, 0.300 kg)
+    License :: Apache-2.0
+====================================================== -->
+    <body name="bowlroot" childclass="tableware">
+        <!-- Visual flat base and 8-segment flared concave wall -->
+        <geom material="tableware_bowl" type="cylinder" pos="0 0 0.005" size="0.050 0.005"/>
+        <geom material="tableware_bowl" pos="0.060 0 0.032" quat="0.980067 0 0.198669 0" size="0.004 0.026 0.025"/>
+        <geom material="tableware_bowl" pos="0.042426 0.042426 0.032" quat="0.905464 -0.076027 0.183546 0.375055" size="0.004 0.026 0.025"/>
+        <geom material="tableware_bowl" pos="0 0.060 0.032" quat="0.693012 -0.140480 0.140480 0.693012" size="0.004 0.026 0.025"/>
+        <geom material="tableware_bowl" pos="-0.042426 0.042426 0.032" quat="0.375055 -0.183546 0.076027 0.905464" size="0.004 0.026 0.025"/>
+        <geom material="tableware_bowl" pos="-0.060 0 0.032" quat="0 -0.198669 0 0.980067" size="0.004 0.026 0.025"/>
+        <geom material="tableware_bowl" pos="-0.042426 -0.042426 0.032" quat="0.375055 0.183546 0.076027 -0.905464" size="0.004 0.026 0.025"/>
+        <geom material="tableware_bowl" pos="0 -0.060 0.032" quat="0.693012 0.140480 0.140480 -0.693012" size="0.004 0.026 0.025"/>
+        <geom material="tableware_bowl" pos="0.042426 -0.042426 0.032" quat="0.905464 0.076027 0.183546 -0.375055" size="0.004 0.026 0.025"/>
+
+        <!-- Collision geoms (total mass = 0.300 kg) -->
+        <geom class="tableware_collision" type="cylinder" pos="0 0 0.005" size="0.050 0.005" mass="0.100"/>
+        <geom class="tableware_collision" pos="0.060 0 0.032" quat="0.980067 0 0.198669 0" size="0.004 0.026 0.025" mass="0.025"/>
+        <geom class="tableware_collision" pos="0.042426 0.042426 0.032" quat="0.905464 -0.076027 0.183546 0.375055" size="0.004 0.026 0.025" mass="0.025"/>
+        <geom class="tableware_collision" pos="0 0.060 0.032" quat="0.693012 -0.140480 0.140480 0.693012" size="0.004 0.026 0.025" mass="0.025"/>
+        <geom class="tableware_collision" pos="-0.042426 0.042426 0.032" quat="0.375055 -0.183546 0.076027 0.905464" size="0.004 0.026 0.025" mass="0.025"/>
+        <geom class="tableware_collision" pos="-0.060 0 0.032" quat="0 -0.198669 0 0.980067" size="0.004 0.026 0.025" mass="0.025"/>
+        <geom class="tableware_collision" pos="-0.042426 -0.042426 0.032" quat="0.375055 0.183546 0.076027 -0.905464" size="0.004 0.026 0.025" mass="0.025"/>
+        <geom class="tableware_collision" pos="0 -0.060 0.032" quat="0.693012 0.140480 0.140480 -0.693012" size="0.004 0.026 0.025" mass="0.025"/>
+        <geom class="tableware_collision" pos="0.042426 -0.042426 0.032" quat="0.905464 0.076027 0.183546 -0.375055" size="0.004 0.026 0.025" mass="0.025"/>
+
+        <!-- Reference sites -->
+        <site type="sphere" name="bowl_rim_site" pos="0.072 0 0.048" size="0.008" group="3" rgba="1 0 0 1"/>
+        <site type="sphere" name="bowl_center_site" pos="0 0 0.012" size="0.010" group="3" rgba="0.1 0.8 0.4 1"/>
+    </body>
+</mujocoinclude>
