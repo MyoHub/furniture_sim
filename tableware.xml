@@ -1,0 +1,28 @@
+<mujoco model="tableware">
+<!-- =================================================
+    Model   :: tableware (Bowl, plate, and spoon)
+    License :: Apache-2.0
+====================================================== -->
+    <compiler angle="radian" meshdir="" texturedir=""/>
+    <include file="tableware/tableware_asset.xml"/>
+    <visual>
+        <headlight diffuse=".9 .9 .9"/>
+    </visual>
+
+    <worldbody>
+        <body name="bowl" pos="0 0 0">
+            <freejoint/>
+            <include file="tableware/bowl_body.xml"/>
+        </body>
+
+        <body name="plate" pos="0.28 0 0">
+            <freejoint/>
+            <include file="tableware/plate_body.xml"/>
+        </body>
+
+        <body name="spoon" pos="-0.22 0 0">
+            <freejoint/>
+            <include file="tableware/spoon_body.xml"/>
+        </body>
+    </worldbody>
+</mujoco>

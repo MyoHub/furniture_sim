@@ -1,0 +1,23 @@
+<mujoco model="cup">
+<!-- =================================================
+    Model   :: cup (Single-handle and two-handled ceramic mugs)
+    License :: Apache-2.0
+====================================================== -->
+    <compiler angle="radian" meshdir="" texturedir=""/>
+    <include file="cup/cup_asset.xml"/>
+    <visual>
+        <headlight diffuse=".9 .9 .9"/>
+    </visual>
+
+    <worldbody>
+        <body name="cup0" pos="0 0 0">
+            <freejoint/>
+            <include file="cup/cup_body0.xml"/>
+        </body>
+
+        <body name="cup1" pos="0.25 0 0">
+            <freejoint/>
+            <include file="cup/cup_body1.xml"/>
+        </body>
+    </worldbody>
+</mujoco>

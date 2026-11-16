@@ -1,0 +1,52 @@
+<mujocoinclude>
+<!-- =================================================
+    Model   :: cup_body1 (Two-handled mug with wide base, 0.260 kg)
+    License :: Apache-2.0
+====================================================== -->
+    <body name="cuproot1" childclass="cup">
+        <!-- Visual wide base and 8-segment hollow cylindrical wall -->
+        <geom material="cup_two_handle_body" type="cylinder" pos="0 0 0.006" size="0.046 0.006"/>
+        <geom material="cup_two_handle_body" pos="0.040 0 0.054" euler="0 0 0" size="0.004 0.017 0.042"/>
+        <geom material="cup_two_handle_body" pos="0.02828 0.02828 0.054" euler="0 0 0.785398" size="0.004 0.017 0.042"/>
+        <geom material="cup_two_handle_body" pos="0 0.040 0.054" euler="0 0 1.570796" size="0.004 0.017 0.042"/>
+        <geom material="cup_two_handle_body" pos="-0.02828 0.02828 0.054" euler="0 0 2.356194" size="0.004 0.017 0.042"/>
+        <geom material="cup_two_handle_body" pos="-0.040 0 0.054" euler="0 0 3.141593" size="0.004 0.017 0.042"/>
+        <geom material="cup_two_handle_body" pos="-0.02828 -0.02828 0.054" euler="0 0 -2.356194" size="0.004 0.017 0.042"/>
+        <geom material="cup_two_handle_body" pos="0 -0.040 0.054" euler="0 0 -1.570796" size="0.004 0.017 0.042"/>
+        <geom material="cup_two_handle_body" pos="0.02828 -0.02828 0.054" euler="0 0 -0.785398" size="0.004 0.017 0.042"/>
+
+        <!-- Visual bilateral handles (+X and -X) -->
+        <geom material="cup_two_handle_grip" type="capsule" pos="0.058 0 0.076" euler="0 1.570796 0" size="0.006 0.014"/>
+        <geom material="cup_two_handle_grip" type="capsule" pos="0.058 0 0.026" euler="0 1.570796 0" size="0.006 0.014"/>
+        <geom material="cup_two_handle_grip" type="capsule" pos="0.074 0 0.051" size="0.007 0.025"/>
+
+        <geom material="cup_two_handle_grip" type="capsule" pos="-0.058 0 0.076" euler="0 1.570796 0" size="0.006 0.014"/>
+        <geom material="cup_two_handle_grip" type="capsule" pos="-0.058 0 0.026" euler="0 1.570796 0" size="0.006 0.014"/>
+        <geom material="cup_two_handle_grip" type="capsule" pos="-0.074 0 0.051" size="0.007 0.025"/>
+
+        <!-- Collision geoms (total mass = 0.260 kg) -->
+        <geom class="cup_collision" type="cylinder" pos="0 0 0.006" size="0.046 0.006" mass="0.092"/>
+        <geom class="cup_collision" pos="0.040 0 0.054" euler="0 0 0" size="0.004 0.017 0.042" mass="0.015"/>
+        <geom class="cup_collision" pos="0.02828 0.02828 0.054" euler="0 0 0.785398" size="0.004 0.017 0.042" mass="0.015"/>
+        <geom class="cup_collision" pos="0 0.040 0.054" euler="0 0 1.570796" size="0.004 0.017 0.042" mass="0.015"/>
+        <geom class="cup_collision" pos="-0.02828 0.02828 0.054" euler="0 0 2.356194" size="0.004 0.017 0.042" mass="0.015"/>
+        <geom class="cup_collision" pos="-0.040 0 0.054" euler="0 0 3.141593" size="0.004 0.017 0.042" mass="0.015"/>
+        <geom class="cup_collision" pos="-0.02828 -0.02828 0.054" euler="0 0 -2.356194" size="0.004 0.017 0.042" mass="0.015"/>
+        <geom class="cup_collision" pos="0 -0.040 0.054" euler="0 0 -1.570796" size="0.004 0.017 0.042" mass="0.015"/>
+        <geom class="cup_collision" pos="0.02828 -0.02828 0.054" euler="0 0 -0.785398" size="0.004 0.017 0.042" mass="0.015"/>
+
+        <geom class="cup_collision" type="capsule" pos="0.058 0 0.076" euler="0 1.570796 0" size="0.006 0.014" mass="0.007"/>
+        <geom class="cup_collision" type="capsule" pos="0.058 0 0.026" euler="0 1.570796 0" size="0.006 0.014" mass="0.007"/>
+        <geom class="cup_collision" type="capsule" pos="0.074 0 0.051" size="0.007 0.025" mass="0.010"/>
+
+        <geom class="cup_collision" type="capsule" pos="-0.058 0 0.076" euler="0 1.570796 0" size="0.006 0.014" mass="0.007"/>
+        <geom class="cup_collision" type="capsule" pos="-0.058 0 0.026" euler="0 1.570796 0" size="0.006 0.014" mass="0.007"/>
+        <geom class="cup_collision" type="capsule" pos="-0.074 0 0.051" size="0.007 0.025" mass="0.010"/>
+
+        <!-- Reference sites -->
+        <site type="sphere" name="cup_site1_right" pos="0.074 0 0.051" size="0.010" group="3" rgba="1 0 0 1"/>
+        <site type="sphere" name="cup_site1_left" pos="-0.074 0 0.051" size="0.010" group="3" rgba="1 0 0 1"/>
+        <site type="sphere" name="cup1_rim_site" pos="0 0 0.096" size="0.008" group="3" rgba="0.2 0.7 1 1"/>
+        <site type="sphere" name="cup1_bottom_site" pos="0 0 0.000" size="0.008" group="3" rgba="0.5 0.5 0.5 1"/>
+    </body>
+</mujocoinclude>

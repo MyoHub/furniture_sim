@@ -36,11 +36,11 @@ def test_scripts_compile_without_syntax_warnings(rel_file: str) -> None:
         compile(source, str(source_path), "exec")
 
 
-def test_test_sims_loads_all_16_models() -> None:
+def test_test_sims_loads_all_models() -> None:
     pytest.importorskip("mujoco")
     ts = _load_repo_module("furniture_sim.test_sims", "test_sims.py")
-    assert "boxcabinet.xml" in ts.model_paths
-    assert len(ts.model_paths) == 16
+    assert {"boxcabinet.xml", "cup.xml", "tableware.xml"}.issubset(ts.model_paths)
+    assert len(ts.model_paths) == 18
 
     case = ts.TestSims()
     case.test_sims()

@@ -1,0 +1,27 @@
+<mujocoinclude>
+<!-- =================================================
+    Model   :: spoon_body (Stainless steel tablespoon, 0.045 kg)
+    License :: Apache-2.0
+====================================================== -->
+    <body name="spoonroot" childclass="tableware">
+        <!-- Visual scoop head and handle -->
+        <geom material="tableware_steel" type="ellipsoid" pos="0.052 0 0.004" size="0.025 0.016 0.004"/>
+        <geom material="tableware_steel" type="capsule" pos="0.052 0.014 0.007" euler="0 1.570796 0" size="0.0025 0.014"/>
+        <geom material="tableware_steel" type="capsule" pos="0.052 -0.014 0.007" euler="0 1.570796 0" size="0.0025 0.014"/>
+        <geom material="tableware_steel" pos="0.016 0 0.007" euler="0 0.12 0" size="0.014 0.004 0.002"/>
+        <geom material="tableware_steel" pos="-0.038 0 0.006" euler="0 -0.05 0" size="0.042 0.006 0.0025"/>
+        <geom material="tableware_steel" type="cylinder" pos="-0.078 0 0.004" size="0.007 0.0025"/>
+
+        <!-- Collision geoms (total mass = 0.045 kg) -->
+        <geom class="tableware_collision" type="ellipsoid" pos="0.052 0 0.004" size="0.025 0.016 0.004" mass="0.016"/>
+        <geom class="tableware_collision" type="capsule" pos="0.052 0.014 0.007" euler="0 1.570796 0" size="0.0025 0.014" mass="0.003"/>
+        <geom class="tableware_collision" type="capsule" pos="0.052 -0.014 0.007" euler="0 1.570796 0" size="0.0025 0.014" mass="0.003"/>
+        <geom class="tableware_collision" pos="0.016 0 0.007" euler="0 0.12 0" size="0.014 0.004 0.002" mass="0.005"/>
+        <geom class="tableware_collision" pos="-0.038 0 0.006" euler="0 -0.05 0" size="0.042 0.006 0.0025" mass="0.014"/>
+        <geom class="tableware_collision" type="cylinder" pos="-0.078 0 0.004" size="0.007 0.0025" mass="0.004"/>
+
+        <!-- Reference sites -->
+        <site type="sphere" name="spoon_handle_site" pos="-0.038 0 0.008" size="0.006" group="3" rgba="1 0 0 1"/>
+        <site type="sphere" name="spoon_tip_site" pos="0.055 0 0.007" size="0.005" group="3" rgba="0.2 0.7 1 1"/>
+    </body>
+</mujocoinclude>

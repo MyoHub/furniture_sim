@@ -36,4 +36,4 @@ model = mujoco.MjModel.from_xml_path(str(xml_path))
 | :---: | :---: | :---: |
 | ![kettles](https://raw.githubusercontent.com/MyoHub/furniture_sim/master/kettle/kettles.png "kettles") | ![kettle](https://raw.githubusercontent.com/MyoHub/furniture_sim/master/kettle/kettle.png "kettle") | ![bin](https://raw.githubusercontent.com/MyoHub/furniture_sim/master/bin/bin.png "bin") |
 
-Additional standalone models without preview images: `boxcabinet.xml`, `dishwasher.xml`, and `lightButtons.xml`.
+Additional standalone models without preview images: `boxcabinet.xml`, `cup.xml` (single-handle and two-handled ceramic mugs), `dishwasher.xml`, `lightButtons.xml`, and `tableware.xml` (bowl, plate, and spoon).
