@@ -13,5 +13,6 @@
     <geom type='box' pos='0 -.12 .2' size='.01 .147 .2' euler='0.0872665 0 1.57' group="4" />
     <geom type='box' pos='0 .12 .2' size='.01 .147 .2' euler='-0.0872665 0 1.57' group="4"/>
     <geom type='box' pos='0 0 .05' size='.1 .1 .005' group="4" />
+    <site type="sphere" name="place_zone_bin_site" pos="0 0 0.06" size="0.015" group="3" rgba="0.1 0.8 0.4 1"/>
 
 </mujocoinclude>

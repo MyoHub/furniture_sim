@@ -6,12 +6,18 @@ from importlib.metadata import PackageNotFoundError, version
 from os import PathLike
 from pathlib import Path
 
+from . import affordances
+from .affordances import (
+    AFFORDANCE_TYPES,
+    AffordanceInfo,
+    get_affordances,
+    load_affordance_catalog,
+)
+
 try:
     __version__ = version("furniture-sim")
 except PackageNotFoundError:
     __version__ = "0.0.0+unknown"
-
-__all__ = ["__version__", "get_asset_root", "resolve_asset"]
 
 
 def get_asset_root() -> Path:
@@ -33,3 +39,15 @@ def resolve_asset(rel_path: str | PathLike[str]) -> Path:
             f"Asset not found in furniture_sim package: {rel_path} ({candidate})"
         )
     return candidate
+
+
+__all__ = [
+    "AFFORDANCE_TYPES",
+    "AffordanceInfo",
+    "__version__",
+    "affordances",
+    "get_affordances",
+    "get_asset_root",
+    "load_affordance_catalog",
+    "resolve_asset",
+]

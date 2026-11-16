@@ -26,6 +26,8 @@
         <geom class="hinge_collision" pos="0.2 0 0.18" size="0.16 0.3 0.02" type="box" mass=".2"/>
         <geom class="hinge_collision" pos="-0.2 0.28 0" size="0.16 0.02 0.16" type="box" mass=".2"/>
         <geom class="hinge_collision" pos="0.2 0.28 0" size="0.16 0.02 0.16" type="box" mass=".2"/>
+        <site type="sphere" name="place_zone_hingecabinet_left_site" pos="-0.2 0 -0.155" size="0.015" group="3" rgba="0.1 0.8 0.4 1"/>
+        <site type="sphere" name="place_zone_hingecabinet_right_site" pos="0.2 0 -0.155" size="0.015" group="3" rgba="0.1 0.8 0.4 1"/>
         <body name="hingeleftdoor" pos="-0.38 -0.32 0">
             <joint axis="0 0 1" name="leftdoorhinge" range="-1.57 0"/>
             <geom material="M_hinge_metal" pos="0.302 -0.128 0" size="0.022 0.16" type="cylinder"/>

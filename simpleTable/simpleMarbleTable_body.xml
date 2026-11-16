@@ -22,5 +22,6 @@
         <geom type="box" size="0.025 0.025 0.305" pos="-0.565 -0.235 0.305"/>
         <geom type="box" size="0.025 0.025 0.305" pos="0.565 0.235 0.305"/>
         <geom type="box" size="0.025 0.025 0.305" pos="0.565 -0.235 0.305"/>
+        <site type="sphere" name="place_zone_marble_table_site" pos="0 0 0.76" size="0.015" group="3" rgba="0.1 0.8 0.4 1"/>
     </body>
 </mujocoinclude>

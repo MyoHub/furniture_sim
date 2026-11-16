@@ -38,6 +38,7 @@ furniture_sim = "."
 [tool.setuptools.package-data]
 furniture_sim = [
     "README.md",
+    "*.json",
     "*.xml",
     "backwall/*",
     "bin/*",

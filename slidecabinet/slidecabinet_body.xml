@@ -18,6 +18,7 @@
         <geom class="slide_collision" pos="-0.225 0 0.18" size="0.223 0.3 0.02" type="box" mass=".2"/>
         <geom class="slide_collision" pos="-0.426 0 0" size="0.022 0.3 0.16" type="box" mass=".2"/>
         <geom class="slide_collision" pos="-0.2 0.276 0" size="0.2 0.024 0.16" type="box" mass=".2"/>
+        <site type="sphere" name="place_zone_slidecabinet_site" pos="-0.225 0 -0.155" size="0.015" group="3" rgba="0.1 0.8 0.4 1"/>
         <body name="slidelink" pos="-0.225 -0.32 0">
             <joint name="slidedoor_joint" axis="1 0 0" type="slide" range="0 .44"/>
             <geom material="M_slide_metal" euler="1.57 0 0" pos="-0.183 -0.06 -0.114" size="0.019 0.053" type="cylinder"/>
